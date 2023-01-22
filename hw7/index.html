@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<title>4 Function Calcultor App</title>
+</head>
+<body>
+	
+	<div class="form-group">
+    	<label for="number1">Entter first number: </label>
+    	<input type="text" class="form-control" id="number1">
+	</div>
+	
+	<div class="form-group">
+    	<label for="number2">Entter second number: </label>
+    	<input type="text" class="form-control" id="number2">
+	</div>
+	
+	<div>Function:</div>
+	<select class="form-control" id="frmOperator">
+	  <option>+</option>
+	  <option>-</option>
+	  <option>/</option>
+	  <option>*</option>
+	</select>
+	
+	<button type="button" class="btn btn-success" id="submit"
+	onClick="calcFunc()">Calculate</button>
+	<h3 id="output"></h3>
+</body>
+</html>
+
+<script src="assets/js/calculator.js"></script>

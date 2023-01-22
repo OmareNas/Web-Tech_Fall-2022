@@ -1,0 +1,61 @@
+/* CSS Document */
+.banner{
+/*	background-color: #e1e1e1; */
+	background-color: #6B0C9B;
+	color: #2BD84F;
+	font-size: 24px;
+	padding: 25px;
+	/*margin: 10px;*/
+	margin-top: 0px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.navActive{
+	background-color: #17C13A;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding: 10px;
+/*	margin: 5px;	*/
+	text-align: center;
+}
+.navItem{ /* */
+	
+	color:#FFFFFF;
+	font-weight: bold;
+	padding: 10px;
+	text-align: center;
+/*	margin: 5px;	
+	
+	text-decoration: none;
+	display: inline-block;*/
+	
+}
+.navItem:hover, .navItem:active{
+	background-color: #E682EC;
+	color: #000000; 
+	border: #EF0003 25px;
+	/*border-color: #EF0003;
+	border-width: 25px;*/
+}
+.clearFloat{
+	clear:both;
+}
+.navMain{
+	width: 100%;
+}
+.navRowMargin{
+	margin-top: 2.5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+}
+.backgroundColors{
+	background: #000000;
+	background-size: 100%;
+}
+.pSettings{
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, 'sans-serif';
+	color:#FFFFFF
+}

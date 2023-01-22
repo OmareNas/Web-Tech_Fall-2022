@@ -1,0 +1,9 @@
+/* CSS Document */
+#banner{
+	background-color: #e1e1e1;
+}
+.navActive{
+	background-color: #0000ff;
+	color: #FFFFFF;
+	font-weight: bold;	
+}

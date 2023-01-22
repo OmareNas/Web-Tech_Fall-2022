@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Entries</title>
+<style>
+	p{color: #00DBEC};
+	tr:nth-child(even) {background-color: rgba(150, 212, 212, 0.4);};
+</style>
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<script src="assets/js/jquery-3.5.1.js"></script>
+</head>
+<body>
+	<div class="backgroundColors" style="width: 100%">
+		<div class="banner"> <h2>Welcome to my Entries Page!</h2> </div>
+		<br><h3 align="center"  style="color: #2DCE37"><br>Contact Form Data Results!</h3><br>
+		<!-- Table -->
+		<table border="1" width="100%" bordercolor="#3f826d">
+			<tr>
+				<th class="colorTh">Record #</th> 
+				<th class="colorTh">First Name</th> 
+				<th class="colorTh">Last Name</th> 
+				<th class="colorTh">Email</th> 
+				<th class="colorTh">Username</th> 
+				<th class="colorTh">Comments</th>
+			</tr>
+			<tbody id="results"></tbody>
+		</table>
+		
+	</div>
+</body>
+</html>
+<script>
+function refresh_div() {
+	$.ajax({
+		type: 'post',
+		url: 'https://ec2-18-221-182-52.us-east-2.compute.amazonaws.com/hw13/query.php', // url link inside for query display
+		success: function(data){
+			$('#results').html(data); //results is the id for tbody
+		}
+	});
+};
+setInterval (function() { refresh_div(); }, 500);
+</script>

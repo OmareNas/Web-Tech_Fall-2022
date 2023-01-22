@@ -1,0 +1,44 @@
+/* CSS Document */
+#banner{
+	background-color: #D7D7D7;
+	color: red;
+}
+.banner{
+	background-color: #F3EEEE;
+	color: #2BD84F;
+	border: #FF0000;
+	border-style: solid;
+	
+	font-size: 24px;
+	padding: 25px;
+	margin-top: 0px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.page{
+	height: auto;
+	width: auto;
+	background-color: #FFFFFF;
+	background-size: 100%;
+}
+.col-15 {
+  -ms-flex: 15%; /* IE10 */
+  flex: 15%;
+}
+.col-70 {
+	-ms-flex: 70%;
+	flex: 70%;
+}
+.col-15,
+.col-70 {
+  padding: 0 16px;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}

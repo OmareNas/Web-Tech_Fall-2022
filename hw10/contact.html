@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact Page</title>
+<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+<style>
+	label
+	{
+		color: #15EA25;
+	}
+	p
+	{
+		color: #00DBEC;
+	}
+</style>
+</head>
+
+<body>
+		
+	<div class="backgroundColors" style="width: 100%">
+		
+		<div class= "banner"><h2>Welcome to my Contact Page!</h2></div>
+		
+		<div class="navRowMargin row">
+			<div class="col-md-3 navItem"><a href ="/index.html">Home</a></div>
+			<div class="col-md-3 navItem"><a href="/school.html">School</a></div>
+			<div class="col-md-3 navItem"><a href="/work.html">Work</a></div>
+			<div  class="col-md-3 navActive">Contact</div>
+		</div>
+		<div class="clearFloat"></div>
+	
+	
+	<h3 align="center"  style="color: #2DCE37"><br>Fill out my contact Form</h3>
+		
+	<div class="form-group">
+		<label>First Name:</label>
+		<input class="form-control" type="text" id="fName" placeholder="John" onBlur="checkName(this.value,this.id)">
+		<p class="help-block" id="fNameHelp"></p>
+	</div>
+		
+	<div class="form-group">
+		<label>Last Name:</label>
+		<input class="form-control" type="text" id="lName" placeholder="Doe" onBlur="checkName(this.value,this.id)">
+		<p class="help-block" id="lNameHelp"></p>
+	</div>
+	
+	<div class="form-group">
+		<label>Email:</label>
+		<input class="form-control" type="text" id="email" placeholder="john.Doe@example.com" onBlur="checkEmail(this.value,this.id)">
+		<p class="help-block" id="emailHelp"></p>
+	</div>	
+	
+	<div class="form-group">
+		<label>Username:</label>
+		<input class="form-control" type="text" id="username" placeholder="JohnDoe01" onBlur="checkUser(this.value,this.id)">
+		<p class="help-block" id="usernameHelp"></p>
+	</div>
+	
+	<div class="form-group">
+		<label>Comment:</label>
+		<textarea class="form-control" rows="3" id="comment"
+		onBlur="checkComment(this.value,this.id)"></textarea>
+		<p class="help-block" id="commentHelp"></p>
+	</div>
+
+	<p><br><br><br><br><br><br><br><br><br></p>
+		
+	</div>		
+</body>
+<script src="assets/js/validation.js"></script>
+	
+</html>
